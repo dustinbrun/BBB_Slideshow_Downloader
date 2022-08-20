@@ -20,7 +20,7 @@ do
   # Get filesize
   filesize=$(wc -c "$x.svg" | awk '{print $1}')
 
-  # Check if file contains 404 or real slideshow-dats (based on the filesize)
+  # Check if file contains 404 or real slideshow-data (based on the filesize)
   if [ $filesize -le 500 ]
   then
       echo "Caught error 404. End of slideshow is reached"
